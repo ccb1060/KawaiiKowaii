@@ -18,11 +18,11 @@ public class Sushi : MonoBehaviour
 
 
     private bool dragging = false;
-    private bool dragged = false;
+    public bool onPlate = false;
     private Vector3 offset;
 
     //The position the sushi will return to when no longer being dragged
-    private Vector3 returnPosition;
+    public Vector3 returnPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,15 +33,16 @@ public class Sushi : MonoBehaviour
     void Update()
     {
         //The conveyor belt movement
-        if (!dragged)
-            transform.position += new Vector3(speed*Time.deltaTime, 0, 0);
-
+        if (!onPlate)
+            transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
         if (dragging)
         {
             // Move object, taking into account original offset.
-            returnPosition += new Vector3(speed * Time.deltaTime, 0, 0);
+            
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
+
+        returnPosition += new Vector3(speed * Time.deltaTime, 0, 0);
 
     }
 
@@ -51,13 +52,16 @@ public class Sushi : MonoBehaviour
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         dragging = true;
         //dragged = true;
-        returnPosition = transform.position;
+        if(!onPlate)
+            returnPosition = transform.position;
+        gameObject.GetComponent<Rigidbody2D>().mass = 0;
     }
 
     private void OnMouseUp()
     {
         // Stop dragging.
         dragging = false;
-        transform.position = returnPosition;
+        if(!onPlate)
+            transform.position = returnPosition;
     }
 }

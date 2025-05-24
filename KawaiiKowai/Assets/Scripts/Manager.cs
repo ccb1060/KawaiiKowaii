@@ -53,8 +53,29 @@ public class Manager : MonoBehaviour
     /// </summary>
     private void SpawnSushi()
     {
-        int rand = Random.Range(0, sushiPrefabs.Count);
-        GameObject sushi = Instantiate(sushiPrefabs[rand].gameObject);
+        int rand = Random.Range(0, 100);
+        GameObject sushi;
+        if (rand < 10)
+        {
+            sushi = Instantiate(sushiPrefabs[4].gameObject);
+        }
+        else if (rand < 35)
+        {
+            sushi = Instantiate(sushiPrefabs[3].gameObject);
+        }
+        else if (rand < 65)
+        {
+            sushi = Instantiate(sushiPrefabs[2].gameObject);
+        }
+        else if (rand < 90)
+        {
+            sushi = Instantiate(sushiPrefabs[1].gameObject);
+        }
+        else
+        {
+            sushi = Instantiate(sushiPrefabs[0].gameObject);
+        }
+
         sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
     }
 }
