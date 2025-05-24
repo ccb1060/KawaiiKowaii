@@ -30,6 +30,8 @@ public class Manager : MonoBehaviour
 
     [SerializeField] int score;
 
+    [SerializeField] SoundManager soundManager;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,7 +48,9 @@ public class Manager : MonoBehaviour
         //Sends player to the end screen when their time is up
         if(playTime < 0)
         {
+            soundManager.SoundOutOfTime();
             SceneManager.LoadScene("Assets/Scenes/EndScreen.unity");
+            
         }
 
         //If it's time, then spawns a sushi and resets the cooldown

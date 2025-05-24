@@ -11,6 +11,8 @@ public class MainPlate : MonoBehaviour
 
     private bool badFood;
 
+    [SerializeField] SoundManager soundManager;
+
 
     private void Start()
     {
