@@ -1,0 +1,60 @@
+using NUnit.Framework;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
+/// <summary>
+/// This script controls all the major elements of the main game loop
+/// </summary>
+public class Manager : MonoBehaviour
+{
+    //The scene's Main Camera
+    [SerializeField] Camera mainCam;
+    //This is the amount of time the player has to earn points
+    [SerializeField] float playTime;
+
+    //This is the amount of time left before the next sushi spawns
+    private float cooldown = 0;
+
+    //A list containing all the basic versions of the sushi types
+    [SerializeField] List<GameObject> sushiPrefabs;
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        playTime -= Time.deltaTime;
+        cooldown -= Time.deltaTime;
+
+        //Sends player to the end screen when their time is up
+        if(playTime < 0)
+        {
+            SceneManager.LoadScene("Assets/Scenes/EndScreen.unity");
+        }
+
+        //If it's time, then spawns a sushi and resets the cooldown
+        if (cooldown <= 0)
+        {
+            SpawnSushi();
+            cooldown += 2;
+        }
+    }
+
+    /// <summary>
+    /// Randomly selects a sushi and spawns it on the conveyor belt.
+    /// </summary>
+    private void SpawnSushi()
+    {
+        int rand = Random.Range(0, sushiPrefabs.Count);
+        GameObject sushi = Instantiate(sushiPrefabs[rand].gameObject);
+        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
+    }
+}
