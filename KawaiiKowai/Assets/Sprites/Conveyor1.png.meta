@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e4a5df8cf9c5d5848b2076f1ec806d4b
+guid: f139583d643e8754b907859c99a6418c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -35,18 +35,6 @@ TextureImporter:
   - first:
       213: 4578196189727329745
     second: Conveyor1_10
-  - first:
-      213: -9192672820666397659
-    second: Conveyor1_11
-  - first:
-      213: -2442355658076474678
-    second: Conveyor1_12
-  - first:
-      213: 3522916848413629927
-    second: Conveyor1_13
-  - first:
-      213: -9075524620325984235
-    second: Conveyor1_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -159,9 +147,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1319
-        width: 108
-        height: 32
+        y: 723
+        width: 2323
+        height: 348
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +168,10 @@ TextureImporter:
       name: Conveyor1_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1073
-        width: 36
-        height: 7
+        x: 958
+        y: 1030
+        width: 80
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +190,10 @@ TextureImporter:
       name: Conveyor1_2
       rect:
         serializedVersion: 2
-        x: 990
-        y: 1035
-        width: 82
-        height: 18
+        x: 1731
+        y: 1030
+        width: 110
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +212,10 @@ TextureImporter:
       name: Conveyor1_3
       rect:
         serializedVersion: 2
-        x: 1763
-        y: 1039
-        width: 110
-        height: 23
+        x: 2165
+        y: 1033
+        width: 59
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +234,10 @@ TextureImporter:
       name: Conveyor1_4
       rect:
         serializedVersion: 2
-        x: 2197
-        y: 1042
-        width: 59
-        height: 15
+        x: 2164
+        y: 1002
+        width: 159
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +256,10 @@ TextureImporter:
       name: Conveyor1_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 732
-        width: 2388
-        height: 291
+        x: 837
+        y: 720
+        width: 8
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,9 +278,9 @@ TextureImporter:
       name: Conveyor1_6
       rect:
         serializedVersion: 2
-        x: 2196
-        y: 1011
-        width: 192
+        x: 626
+        y: 706
+        width: 42
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -312,10 +300,10 @@ TextureImporter:
       name: Conveyor1_7
       rect:
         serializedVersion: 2
-        x: 869
-        y: 729
-        width: 8
-        height: 7
+        x: 2093
+        y: 708
+        width: 19
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,9 +322,9 @@ TextureImporter:
       name: Conveyor1_8
       rect:
         serializedVersion: 2
-        x: 658
-        y: 715
-        width: 42
+        x: 581
+        y: 681
+        width: 62
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -356,10 +344,10 @@ TextureImporter:
       name: Conveyor1_9
       rect:
         serializedVersion: 2
-        x: 2125
-        y: 717
-        width: 19
-        height: 6
+        x: 947
+        y: 671
+        width: 34
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +366,10 @@ TextureImporter:
       name: Conveyor1_10
       rect:
         serializedVersion: 2
-        x: 613
-        y: 690
-        width: 62
-        height: 13
+        x: 0
+        y: 641
+        width: 106
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,94 +380,6 @@ TextureImporter:
       bones: []
       spriteID: 1dd8eb0ad25098f30800000000000000
       internalID: 4578196189727329745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Conveyor1_11
-      rect:
-        serializedVersion: 2
-        x: 979
-        y: 680
-        width: 34
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52c8ac346c01d6080800000000000000
-      internalID: -9192672820666397659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Conveyor1_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 639
-        width: 77
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac2bf2918720b1ed0800000000000000
-      internalID: -2442355658076474678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Conveyor1_13
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 654
-        width: 49
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7eddeea553ae3e030800000000000000
-      internalID: 3522916848413629927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Conveyor1_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 612
-        width: 15
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 518682721724d0280800000000000000
-      internalID: -9075524620325984235
       vertices: []
       indices: 
       edges: []
