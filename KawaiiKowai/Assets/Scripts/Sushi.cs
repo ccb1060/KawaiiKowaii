@@ -17,6 +17,7 @@ public class Sushi : MonoBehaviour
     [SerializeField] int rank;
 
 
+
     private bool dragging = false;
     public bool onPlate = false;
     private Vector3 offset;
