@@ -11,9 +11,11 @@ public class Plate : MonoBehaviour
         Sushi food = collision.gameObject.GetComponent<Sushi>();
         if (food && !occupant)
         {
+            Debug.Log("Entering");
+
             food.onPlate = true;
             food.gameObject.GetComponent<Rigidbody2D>().mass = 1000000;
-            //food.returnPosition = transform.position;
+            food.returnPosition = transform.position;
             occupant = food;
         }
     }
@@ -22,7 +24,7 @@ public class Plate : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<Sushi>() == occupant)
         {
-            occupant.onPlate = false;
+            Debug.Log("Leaving");
             occupant = null;
         }
     }

@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,12 @@ public class Manager : MonoBehaviour
     [SerializeField] Camera mainCam;
     //This is the amount of time the player has to earn points
     [SerializeField] float playTime;
+
+    [SerializeField] GameObject textPref;
+
+    [SerializeField] GameObject mainPlate; 
+
+    [SerializeField] Canvas canvas;
 
     //This is the amount of time left before the next sushi spawns
     private float cooldown = 0;
@@ -81,8 +88,12 @@ public class Manager : MonoBehaviour
         sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
     }
 
-    public void AddScore(int input)
+    public void AddScore(int input, Vector3 pos)
     {
         score += input;
+        GameObject text = Instantiate(textPref, mainPlate.transform.position, mainPlate.transform.rotation, canvas.transform);
+        text.GetComponent<TMP_Text>().text = input.ToString();
+        text.transform.position = pos;
+        text.transform.position = mainCam.ViewportToScreenPoint(new Vector3(0, -.01f, 0));
     }
 }

@@ -25,7 +25,7 @@ public class MainPlate : MonoBehaviour
 
         if (timeLeft < 0)
         {
-            manager.AddScore(occupant.points);
+            manager.AddScore(occupant.points, transform.position);
 
             if (occupant.points == 0)
                 badFood = true;
@@ -43,7 +43,10 @@ public class MainPlate : MonoBehaviour
         Sushi food = collision.gameObject.GetComponent<Sushi>();
         if (food && !occupant)
         {
+            Debug.Log("Entering");
+
             food.onPlate = true;
+            food.returnPosition = transform.position;
             food.gameObject.GetComponent<Rigidbody2D>().mass = 1000000;
             //food.returnPosition = transform.position;
             occupant = food;
@@ -54,7 +57,7 @@ public class MainPlate : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<Sushi>() == occupant)
         {
-            occupant.onPlate = false;
+            Debug.Log("Leaving");
             occupant = null;
             if (badFood)
             {

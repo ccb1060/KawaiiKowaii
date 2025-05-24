@@ -34,15 +34,24 @@ public class Sushi : MonoBehaviour
     {
         //The conveyor belt movement
         if (!onPlate)
+        {
             transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+            returnPosition += new Vector3(speed * Time.deltaTime, 0, 0);
+        }
+            
         if (dragging)
         {
             // Move object, taking into account original offset.
             
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
+      
+        
 
-        returnPosition += new Vector3(speed * Time.deltaTime, 0, 0);
+        if (transform.position.x > 20)
+        {
+            Destroy(gameObject);
+        }
 
     }
 
