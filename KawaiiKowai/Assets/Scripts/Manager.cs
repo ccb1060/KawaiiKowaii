@@ -48,7 +48,7 @@ public class Manager : MonoBehaviour
         //Sends player to the end screen when their time is up
         if(playTime < 0)
         {
-            soundManager.SoundOutOfTime();
+            //soundManager.SoundOutOfTime();
 
             SceneManager.LoadScene("Assets/Scenes/EndScreen.unity");
             
