@@ -7,7 +7,9 @@ public class MainPlate : MonoBehaviour
     private Sushi occupant;
 
     [SerializeField] float timeToEat;
-    private float timeLeft;
+    [SerializeField] float timeLeft;
+
+    private bool badFood;
 
 
     private void Start()
@@ -24,8 +26,14 @@ public class MainPlate : MonoBehaviour
         if (timeLeft < 0)
         {
             manager.AddScore(occupant.points);
+
+            if (occupant.points == 0)
+                badFood = true;
+            else 
+                badFood = false;
+
             Destroy(occupant.gameObject);
-            timeLeft = timeToEat;
+
         }
     }
 
@@ -48,7 +56,15 @@ public class MainPlate : MonoBehaviour
         {
             occupant.onPlate = false;
             occupant = null;
-            timeLeft = timeToEat;
+            if (badFood)
+            {
+                timeLeft = 2 * timeToEat;
+            }
+            else
+            {
+                timeLeft = timeToEat;
+            }
+
         }
     }
 }
