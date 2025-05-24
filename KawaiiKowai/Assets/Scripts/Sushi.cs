@@ -19,14 +19,14 @@ public class Sushi : MonoBehaviour
 
     private bool dragging = false;
     public bool onPlate = false;
-    private Vector3 offset;
+    public Vector3 offset;
 
     //The position the sushi will return to when no longer being dragged
     public Vector3 returnPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        transform.position -= new Vector3(0, 2, 0);
     }
 
     // Update is called once per frame
