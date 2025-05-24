@@ -18,7 +18,7 @@ public class Manager : MonoBehaviour
 
     [SerializeField] GameObject textPref;
 
-    [SerializeField] GameObject mainPlate; 
+    [SerializeField] GameObject mainPlate;
 
     [SerializeField] Canvas canvas;
 
@@ -27,16 +27,21 @@ public class Manager : MonoBehaviour
 
     //A list containing all the basic versions of the sushi types
     [SerializeField] List<GameObject> sushiPrefabs;
+    [SerializeField] List<GameObject>? sushiCountdownPrefabs;
 
     [SerializeField] int score;
 
     [SerializeField] SoundManager soundManager;
 
+    private bool sushiCountdown = false;
+
+    private int index = 0;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -56,9 +61,46 @@ public class Manager : MonoBehaviour
         //If it's time, then spawns a sushi and resets the cooldown
         if (cooldown <= 0)
         {
-            SpawnSushi();
+            if (!sushiCountdown && sushiCountdownPrefabs.Count > 1)
+            {
+                SpawnSushiCountdown();
+            }
+            else
+            {
+                SpawnSushi();
+            }
+
             cooldown += 2;
         }
+    }
+
+    private void SpawnSushiCountdown()
+    {
+        GameObject sushi;
+        transform.position -= new Vector3(0, 2, 0);
+        if (index == 0)
+        {
+            sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            index++;
+        }
+        else if (index == 1)
+        {
+            sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            index++;
+        }
+        else if (index == 2)
+        {
+            sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            index++;
+        }
+        else
+        {
+            sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            sushiCountdown = true;
+        }
+
+
+        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
     }
 
     /// <summary>

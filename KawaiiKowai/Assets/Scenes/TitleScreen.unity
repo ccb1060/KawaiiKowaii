@@ -557,6 +557,14 @@ PrefabInstance:
       propertyPath: playTime
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: sushiCountdownPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: 'sushiCountdownPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6685463951831757129, guid: 90c81e8a184a8c84fb70d788e399ed83, type: 3}
     - target: {fileID: 8332027116631598495, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
       propertyPath: m_Name
       value: GameManager
