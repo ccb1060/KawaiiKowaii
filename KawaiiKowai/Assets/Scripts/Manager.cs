@@ -21,6 +21,8 @@ public class Manager : MonoBehaviour
     //A list containing all the basic versions of the sushi types
     [SerializeField] List<GameObject> sushiPrefabs;
 
+    [SerializeField] int score;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -77,5 +79,10 @@ public class Manager : MonoBehaviour
         }
 
         sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
+    }
+
+    public void AddScore(int input)
+    {
+        score += input;
     }
 }

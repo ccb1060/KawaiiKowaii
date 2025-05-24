@@ -11,7 +11,7 @@ public class Sushi : MonoBehaviour
     [SerializeField] float speed;
 
     //How much the sushi is worth when scored
-    [SerializeField] int points;
+    [SerializeField] public int points;
 
     //The sushi's quality
     [SerializeField] int rank;
