@@ -14,19 +14,20 @@ public class Sushi : MonoBehaviour
     [SerializeField] public int points;
 
     //The sushi's quality
-    [SerializeField] int rank;
+    [SerializeField] public int rank;
+
 
 
     private bool dragging = false;
     public bool onPlate = false;
-    private Vector3 offset;
+    public Vector3 offset;
 
     //The position the sushi will return to when no longer being dragged
     public Vector3 returnPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        transform.position -= new Vector3(0, 2, 0);
     }
 
     // Update is called once per frame
@@ -34,15 +35,24 @@ public class Sushi : MonoBehaviour
     {
         //The conveyor belt movement
         if (!onPlate)
+        {
             transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+            returnPosition += new Vector3(speed * Time.deltaTime, 0, 0);
+        }
+            
         if (dragging)
         {
             // Move object, taking into account original offset.
             
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
+      
+        
 
-        returnPosition += new Vector3(speed * Time.deltaTime, 0, 0);
+        if (transform.position.x > 20)
+        {
+            Destroy(gameObject);
+        }
 
     }
 
@@ -61,7 +71,6 @@ public class Sushi : MonoBehaviour
     {
         // Stop dragging.
         dragging = false;
-        if(!onPlate)
-            transform.position = returnPosition;
+        transform.position = returnPosition;
     }
 }

@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,12 @@ public class Manager : MonoBehaviour
     //This is the amount of time the player has to earn points
     [SerializeField] float playTime;
 
+    [SerializeField] GameObject textPref;
+
+    [SerializeField] GameObject mainPlate; 
+
+    [SerializeField] Canvas canvas;
+
     //This is the amount of time left before the next sushi spawns
     private float cooldown = 0;
 
@@ -23,11 +30,13 @@ public class Manager : MonoBehaviour
 
     [SerializeField] int score;
 
+    [SerializeField] SoundManager soundManager;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -39,7 +48,10 @@ public class Manager : MonoBehaviour
         //Sends player to the end screen when their time is up
         if(playTime < 0)
         {
+            //soundManager.SoundOutOfTime();
+
             SceneManager.LoadScene("Assets/Scenes/EndScreen.unity");
+            
         }
 
         //If it's time, then spawns a sushi and resets the cooldown
@@ -81,8 +93,12 @@ public class Manager : MonoBehaviour
         sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
     }
 
-    public void AddScore(int input)
+    public void AddScore(int input, Vector3 pos)
     {
         score += input;
+        GameObject text = Instantiate(textPref, mainPlate.transform.position, mainPlate.transform.rotation, canvas.transform);
+        text.GetComponent<TMP_Text>().text = input.ToString();
+        text.transform.position = pos;
+        text.transform.position = mainCam.ViewportToScreenPoint(new Vector3(0, -.01f, 0));
     }
 }
