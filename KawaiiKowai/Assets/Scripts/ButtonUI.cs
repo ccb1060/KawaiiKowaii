@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagment
+using UnityEngine.SceneManagement;
 
 public class ButtonUI : MonoBehaviour
 {

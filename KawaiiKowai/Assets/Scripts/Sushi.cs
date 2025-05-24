@@ -70,7 +70,6 @@ public class Sushi : MonoBehaviour
     {
         // Stop dragging.
         dragging = false;
-        if(!onPlate)
-            transform.position = returnPosition;
+        transform.position = returnPosition;
     }
 }
