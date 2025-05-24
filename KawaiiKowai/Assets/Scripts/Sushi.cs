@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 /// <summary>
@@ -14,6 +15,10 @@ public class Sushi : MonoBehaviour
 
     //The sushi's quality
     [SerializeField] int rank;
+
+
+    private Vector3 screenPoint;
+    private Vector3 offset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,5 +30,6 @@ public class Sushi : MonoBehaviour
     {
         //The conveyor belt movement
         transform.position += new Vector3(speed*Time.deltaTime, 0, 0);
+        
     }
 }
