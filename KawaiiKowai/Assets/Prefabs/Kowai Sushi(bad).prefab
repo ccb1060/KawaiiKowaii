@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3081865087585114531}
   - component: {fileID: 6384971423440555138}
   - component: {fileID: 3938278374373800294}
-  - component: {fileID: 4277427012186295149}
   - component: {fileID: 2277696582664893368}
   m_Layer: 0
   m_Name: Kowai Sushi(bad)
@@ -105,18 +104,6 @@ MonoBehaviour:
   speed: 2
   points: 0
   rank: 5
---- !u!114 &4277427012186295149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483499952791861192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19cc6043e1ef46a478764371493dfb9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2277696582664893368
 BoxCollider2D:
   m_ObjectHideFlags: 0

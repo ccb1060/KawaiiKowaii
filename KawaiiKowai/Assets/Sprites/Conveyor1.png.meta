@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Conveyor1_0: 6038881840584476880
+      Conveyor1_1: 8787660026453144363
+      Conveyor1_10: 4578196189727329745
+      Conveyor1_11: -9192672820666397659
+      Conveyor1_12: -2442355658076474678
+      Conveyor1_13: 3522916848413629927
+      Conveyor1_14: -9075524620325984235
+      Conveyor1_2: 2249928200202399097
+      Conveyor1_3: 6273507733809816755
+      Conveyor1_4: -6181959252077918223
+      Conveyor1_5: 3369695471752424143
+      Conveyor1_6: -8645230045870042400
+      Conveyor1_7: 4933131982069671774
+      Conveyor1_8: 6814186425825497547
+      Conveyor1_9: -1642798651996242557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

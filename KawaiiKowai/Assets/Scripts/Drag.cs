@@ -13,9 +13,6 @@ public class Drag : MonoBehaviour
             // Move object, taking into account original offset.
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
-
-        if (Input.GetMouseButtonDown(0))
-            Debug.Log("Mouse down");
     }
 
     private void OnMouseDown()

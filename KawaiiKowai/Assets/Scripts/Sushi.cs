@@ -17,8 +17,12 @@ public class Sushi : MonoBehaviour
     [SerializeField] int rank;
 
 
-    private Vector3 screenPoint;
+    private bool dragging = false;
+    private bool dragged = false;
     private Vector3 offset;
+
+    //The position the sushi will return to when no longer being dragged
+    private Vector3 returnPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,7 +33,31 @@ public class Sushi : MonoBehaviour
     void Update()
     {
         //The conveyor belt movement
-        transform.position += new Vector3(speed*Time.deltaTime, 0, 0);
-        
+        if (!dragged)
+            transform.position += new Vector3(speed*Time.deltaTime, 0, 0);
+
+        if (dragging)
+        {
+            // Move object, taking into account original offset.
+            returnPosition += new Vector3(speed * Time.deltaTime, 0, 0);
+            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
+        }
+
+    }
+
+    private void OnMouseDown()
+    {
+        // Record the difference between the objects centre, and the clicked point on the camera plane.
+        offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        dragging = true;
+        //dragged = true;
+        returnPosition = transform.position;
+    }
+
+    private void OnMouseUp()
+    {
+        // Stop dragging.
+        dragging = false;
+        transform.position = returnPosition;
     }
 }
