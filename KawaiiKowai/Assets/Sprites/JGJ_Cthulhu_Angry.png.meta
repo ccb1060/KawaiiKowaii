@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 3f4c023f474d9e74f9c349dce1841189
+guid: bf20ac38ea801374a8e76e6104737024
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8138327018607704880
-    second: RIT_UI_01_0
+      213: -8825108891244101250
+    second: JGJ_Cthulhu_Angry_0
+  - first:
+      213: 7079297362905546452
+    second: JGJ_Cthulhu_Angry_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RIT_UI_01_0
+      name: JGJ_Cthulhu_Angry_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 70
         y: 0
-        width: 2692
-        height: 501
+        width: 379
+        height: 462
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03b73120e4521f070800000000000000
-      internalID: 8138327018607704880
+      spriteID: e710149883ae68580800000000000000
+      internalID: -8825108891244101250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JGJ_Cthulhu_Angry_1
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 309
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de385f9177be3260800000000000000
+      internalID: 7079297362905546452
       vertices: []
       indices: 
       edges: []
@@ -134,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      RIT_UI_01_0: 8138327018607704880
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
