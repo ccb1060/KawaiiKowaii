@@ -49,6 +49,7 @@ public class Manager : MonoBehaviour
         if(playTime < 0)
         {
             soundManager.SoundOutOfTime();
+
             SceneManager.LoadScene("Assets/Scenes/EndScreen.unity");
             
         }

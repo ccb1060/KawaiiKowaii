@@ -29,10 +29,25 @@ public class MainPlate : MonoBehaviour
         {
             manager.AddScore(occupant.points, transform.position);
 
-            if (occupant.points == 0)
-                badFood = true;
-            else 
-                badFood = false;
+            switch (occupant.rank)
+            {
+                case 1:
+                    soundManager.Kawaii();
+                    break;
+                case 2:
+                    soundManager.Excellent();
+                    break;
+                case 3:
+                    soundManager.Good();
+                    break;
+                case 4:
+                    soundManager.Normal();
+                    break;
+                case 5:
+                    soundManager.Kowai();
+                    badFood = true;
+                    break;
+            }
 
             Destroy(occupant.gameObject);
 

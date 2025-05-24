@@ -241,6 +241,7 @@ MonoBehaviour:
   manager: {fileID: 1747940939}
   timeToEat: 4
   timeLeft: 0
+  soundManager: {fileID: 1965826945}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +518,10 @@ PrefabInstance:
       propertyPath: mainPlate
       value: 
       objectReference: {fileID: 1861082205}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1965826945}
     - target: {fileID: 8332027116631598495, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -821,6 +826,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965826945 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3360445459503462498, guid: 7b8d427dcd2cdad44ad48474eb79cabc, type: 3}
+  m_PrefabInstance: {fileID: 1578273117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9a547cf46f70f498da0b368255d9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6974847761646980628
 PrefabInstance:
   m_ObjectHideFlags: 0
