@@ -23,7 +23,7 @@ public class Manager : MonoBehaviour
     [SerializeField] Canvas canvas;
 
     //This is the amount of time left before the next sushi spawns
-    private float cooldown = 0;
+    private float cooldown = 4;
 
     //A list containing all the basic versions of the sushi types
     [SerializeField] List<GameObject> sushiPrefabs;
