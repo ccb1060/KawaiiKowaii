@@ -119,7 +119,9 @@ public class MainPlate : MonoBehaviour
     /// </summary>
     void updateIndicator()
     {
-        float timeFraction = timeToEat / timeLeft; 
+
+        float timeFraction = timeLeft / timeToEat;
+        Debug.Log(timeFraction);
 
         if (timeFraction > 0.75f)
         {
