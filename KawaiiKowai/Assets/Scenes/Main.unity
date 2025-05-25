@@ -525,10 +525,6 @@ PrefabInstance:
       propertyPath: mainPlate
       value: 
       objectReference: {fileID: 1861082205}
-    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
-      propertyPath: soundManager
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8332027116631598495, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
       propertyPath: m_Name
       value: GameManager
