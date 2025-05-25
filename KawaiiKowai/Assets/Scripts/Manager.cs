@@ -54,11 +54,14 @@ public class Manager : MonoBehaviour
 
         //Sends player to the end screen when their time is up
         if(playTime < 0)
-        {
-            //soundManager.SoundOutOfTime();
+        { 
 
             SceneManager.LoadScene("Assets/Scenes/EndScreen.unity");
             
+        }
+        else if (playTime < 1)
+        {
+            soundManager.SoundOutOfTime();
         }
 
         //If it's time, then spawns a sushi and resets the cooldown
