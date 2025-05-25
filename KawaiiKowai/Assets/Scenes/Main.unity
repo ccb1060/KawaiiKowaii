@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611168202004249856, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4
+      value: -3.18
       objectReference: {fileID: 0}
     - target: {fileID: 1611168202004249856, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -492,7 +492,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.86, y: -4.63, z: 0}
-  m_LocalScale: {x: 35.088493, y: 30.850641, z: 0}
+  m_LocalScale: {x: 39.37631, y: 30.850641, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 19516310}
@@ -525,26 +525,6 @@ PrefabInstance:
       propertyPath: mainPlate
       value: 
       objectReference: {fileID: 1861082205}
-    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
-      propertyPath: sushiCountdownPrefabs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
-      propertyPath: 'sushiCountdownPrefabs.Array.data[0]'
-      value: 
-      objectReference: {fileID: 6685463951831757129, guid: 90c81e8a184a8c84fb70d788e399ed83, type: 3}
-    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
-      propertyPath: 'sushiCountdownPrefabs.Array.data[1]'
-      value: 
-      objectReference: {fileID: 7667828297281154846, guid: fdb331baeef7d5f40a777ddc43b35fcc, type: 3}
-    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
-      propertyPath: 'sushiCountdownPrefabs.Array.data[2]'
-      value: 
-      objectReference: {fileID: 1294580202598822450, guid: d43235b3f6c86d34fa01dc5a78f8fa84, type: 3}
-    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
-      propertyPath: 'sushiCountdownPrefabs.Array.data[3]'
-      value: 
-      objectReference: {fileID: 987370415290633558, guid: 68de552875ff13c47bfffaf78dae96cc, type: 3}
     - target: {fileID: 8332027116631598495, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -703,7 +683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611168202004249856, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.93
+      value: -3.88
       objectReference: {fileID: 0}
     - target: {fileID: 1611168202004249856, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -919,7 +899,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.47, y: 61.52, z: 784.8001}
-  m_LocalScale: {x: 35.51509, y: 32.246136, z: 31.379852}
+  m_LocalScale: {x: 38.71145, y: 32.246136, z: 31.379852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 19516310}
@@ -1027,7 +1007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611168202004249856, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.55
+      value: -3.24
       objectReference: {fileID: 0}
     - target: {fileID: 1611168202004249856, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
       propertyPath: m_LocalPosition.z
