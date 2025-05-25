@@ -17,6 +17,8 @@ public class Sushi : MonoBehaviour
     [SerializeField] public int rank;
 
 
+    [SerializeField] public Sprite[] possibleSprites;
+    [SerializeField] public SpriteRenderer spriteRenderer; 
 
     private bool dragging = false;
     public bool onPlate = false;
@@ -27,7 +29,7 @@ public class Sushi : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        transform.position -= new Vector3(0, 2, 0);
+        transform.position -= new Vector3(0, -1, 0);
     }
 
     // Update is called once per frame
@@ -46,8 +48,6 @@ public class Sushi : MonoBehaviour
             
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
-      
-        
 
         if (transform.position.x > 20)
         {
@@ -72,5 +72,30 @@ public class Sushi : MonoBehaviour
         // Stop dragging.
         dragging = false;
         transform.position = returnPosition;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Sushi")
+        {
+            Physics2D.IgnoreCollision(this.GetComponent<BoxCollider2D>(), collision.gameObject.GetComponent<BoxCollider2D>()); 
+        }
+    }
+
+    /// <summary>
+    /// Generates a random texture for the sushi
+    /// </summary>
+    private void GenerateTexture()
+    {
+        int random = Random.Range(1, 3);
+
+        if (random == 1)
+        {
+            spriteRenderer.sprite = possibleSprites[0];
+        }
+        else
+        {
+            spriteRenderer.sprite = possibleSprites[1];
+        }
     }
 }

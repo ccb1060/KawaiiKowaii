@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4666402122592783820}
   m_Layer: 0
   m_Name: Good Sushi
-  m_TagString: Untagged
+  m_TagString: Sushi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +105,10 @@ MonoBehaviour:
   speed: 5
   points: 800
   rank: 3
+  possibleSprites:
+  - {fileID: 6408163649855019687, guid: 6fb26cf70f8f7a340be9fb85ad2f1d24, type: 3}
+  - {fileID: -1106055915658948966, guid: 0f11f57dd990d92408f8a48574bd67a1, type: 3}
+  spriteRenderer: {fileID: 6384971423440555138}
   onPlate: 0
   offset: {x: 0, y: 0, z: 0}
   returnPosition: {x: 0, y: 0, z: 0}

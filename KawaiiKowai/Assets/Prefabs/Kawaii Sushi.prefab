@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4734122164065758063}
   m_Layer: 0
   m_Name: Kawaii Sushi
-  m_TagString: Untagged
+  m_TagString: Sushi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +105,10 @@ MonoBehaviour:
   speed: 5
   points: 3000
   rank: 1
+  possibleSprites:
+  - {fileID: -825516707074846842, guid: d95fea67bf969ac4f8a6faf9c12cb30d, type: 3}
+  - {fileID: -4257427296370490429, guid: 7fb379e885cb5d5498e7160ced660cd8, type: 3}
+  spriteRenderer: {fileID: 0}
   onPlate: 0
   offset: {x: 0, y: 0, z: 0}
   returnPosition: {x: 0, y: 0, z: 0}

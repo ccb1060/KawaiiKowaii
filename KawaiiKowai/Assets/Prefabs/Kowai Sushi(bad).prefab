@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6967271987534700496}
   m_Layer: 0
   m_Name: Kowai Sushi(bad)
-  m_TagString: Untagged
+  m_TagString: Sushi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
