@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JGJ_Kowai_2_0: -6121099033266954435
+      JGJ_Kowai_2_1: -2393297487390404462
+      JGJ_Kowai_2_2: -4820861817328579081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

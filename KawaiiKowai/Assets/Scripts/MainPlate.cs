@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class MainPlate : MonoBehaviour
 
     [SerializeField] SoundManager soundManager;
 
+    [SerializeField] List<GameObject> textPrefs;
 
     private void Start()
     {
@@ -33,6 +35,7 @@ public class MainPlate : MonoBehaviour
             {
                 case 1:
                     soundManager.Kawaii();
+                    
                     break;
                 case 2:
                     soundManager.Excellent();
@@ -48,7 +51,7 @@ public class MainPlate : MonoBehaviour
                     badFood = true;
                     break;
             }
-
+            spawnText(occupant.rank);
             Destroy(occupant.gameObject);
 
         }
@@ -86,5 +89,11 @@ public class MainPlate : MonoBehaviour
             }
 
         }
+    }
+
+    void spawnText(int rank)
+    {
+        GameObject text = Instantiate(textPrefs[rank-1]);
+        text.transform.position = Camera.main.ViewportToScreenPoint(new Vector3(.015f, 0, 0));
     }
 }
