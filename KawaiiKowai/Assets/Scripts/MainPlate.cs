@@ -16,15 +16,29 @@ public class MainPlate : MonoBehaviour
 
     [SerializeField] List<GameObject> textPrefs;
 
+    [SerializeField] GameObject timerPref;
+    private GameObject timer;
+    private EatingTimer timerScript; 
+
     private void Start()
     {
         timeLeft = timeToEat;
+
+        //Instantiates a new timer
+        spawnTimer();
+        timer.SetActive(false);
     }
     private void Update()
     {
         if (occupant)
         {
+            if (timer.activeSelf == false)
+            {
+                timer.SetActive(true);
+            }
+
             timeLeft -= Time.deltaTime;
+            updateIndicator(); 
         }
 
         if (timeLeft < 0)
@@ -54,6 +68,9 @@ public class MainPlate : MonoBehaviour
             spawnText(occupant.rank);
             Destroy(occupant.gameObject);
 
+            Debug.Log("Resetting timer after sushi eaten");
+            timerScript.ResetTimer();
+            timer.SetActive (false);
         }
     }
 
@@ -95,5 +112,41 @@ public class MainPlate : MonoBehaviour
     {
         GameObject text = Instantiate(textPrefs[rank-1]);
         text.transform.position = Camera.main.ViewportToScreenPoint(new Vector3(.015f, 0, 0));
+    }
+
+    /// <summary>
+    /// Updates the eating icon based on how much time is left to eat the sushi
+    /// </summary>
+    void updateIndicator()
+    {
+
+        float timeFraction = timeLeft / timeToEat;
+        Debug.Log(timeFraction);
+
+        if (timeFraction > 0.75f)
+        {
+            timerScript.ChangeImage(0);
+        }
+        else if (timeFraction > 0.5f)
+        {
+            timerScript.ChangeImage(1);
+        }
+        else if (timeFraction > 0.25f)
+        {
+            timerScript.ChangeImage(2);
+        }
+        else if (timeFraction > 0)
+        {
+            timerScript.ChangeImage(3);
+        }
+    }
+
+    /// <summary>
+    /// Spawns the timer at the start of the plate eating sequence
+    /// </summary>
+    void spawnTimer()
+    {
+        timer = Instantiate(timerPref);
+        timerScript = timer.GetComponent<EatingTimer>();
     }
 }

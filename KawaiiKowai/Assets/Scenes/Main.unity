@@ -249,6 +249,7 @@ MonoBehaviour:
   - {fileID: 4397425662485779721, guid: 688d3605678779b4bb637a898a6d8158, type: 3}
   - {fileID: 8364379408961680182, guid: aa46e0d9836cdc942bcf8dd43f1d16df, type: 3}
   - {fileID: 1029796721078039209, guid: 8ea600b6476d29e4d819e2cce1953edc, type: 3}
+  timerPref: {fileID: 5227692005739962234, guid: 49fceb0176906e342a81f082db1f14a6, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
