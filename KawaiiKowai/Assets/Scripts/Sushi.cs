@@ -73,4 +73,12 @@ public class Sushi : MonoBehaviour
         dragging = false;
         transform.position = returnPosition;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Sushi")
+        {
+            Physics2D.IgnoreCollision(this.GetComponent<BoxCollider2D>(), collision.gameObject.GetComponent<BoxCollider2D>()); 
+        }
+    }
 }
