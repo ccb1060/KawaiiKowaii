@@ -85,4 +85,24 @@ public class SoundManager : MonoBehaviour
         sources[12].Play();
 
     }
+
+    public void Three()
+    {
+        sources[0].PlayDelayed(5);
+    }
+
+    public void Two()
+    {
+        sources[1].PlayDelayed(5);
+    }
+
+    public void One()
+    {
+        sources[5].PlayDelayed(5);
+    }
+
+    public void Go()
+    {
+        sources[6].PlayDelayed(5);
+    }
 }

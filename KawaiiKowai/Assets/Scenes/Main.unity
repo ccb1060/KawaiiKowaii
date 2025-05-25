@@ -531,6 +531,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1861082205}
     - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1581304970}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
       propertyPath: sushiCountdownPrefabs.Array.size
       value: 4
       objectReference: {fileID: 0}

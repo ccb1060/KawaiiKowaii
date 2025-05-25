@@ -83,25 +83,29 @@ public class Manager : MonoBehaviour
 
     private void SpawnSushiCountdown()
     {
-        GameObject sushi;;
+        GameObject sushi;
         if (index == 0)
         {
             sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            soundManager.Three();
             index++;
         }
         else if (index == 1)
         {
             sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            soundManager.Two();
             index++;
         }
         else if (index == 2)
         {
             sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            soundManager.One();
             index++;
         }
         else
         {
             sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
+            soundManager.Go();
             sushiCountdown = true;
         }
 
@@ -143,10 +147,10 @@ public class Manager : MonoBehaviour
     public void AddScore(int input, Vector3 pos)
     {
         ScoreManager.AddScore(input);
-        GameObject text = Instantiate(textPref, mainPlate.transform.position, mainPlate.transform.rotation, canvas.transform);
+        /*GameObject text = Instantiate(textPref, mainPlate.transform.position, mainPlate.transform.rotation, canvas.transform);
         text.GetComponent<TMP_Text>().text = input.ToString();
         text.transform.position = pos;
-        text.transform.position = mainCam.ViewportToScreenPoint(new Vector3(0, -.01f, 0));
+        text.transform.position = mainCam.ViewportToScreenPoint(new Vector3(0, -.01f, 0));*/
     }
 
     public void GoToMenu()
