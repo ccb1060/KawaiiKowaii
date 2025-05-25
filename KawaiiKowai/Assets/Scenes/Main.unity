@@ -1140,6 +1140,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2971751222223821287, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6816104715708979609, guid: ba9f6d254d7e30d44a0391009663cf91, type: 3}
       propertyPath: m_Name
       value: Plate
