@@ -108,7 +108,7 @@ MonoBehaviour:
   possibleSprites:
   - {fileID: -825516707074846842, guid: d95fea67bf969ac4f8a6faf9c12cb30d, type: 3}
   - {fileID: -4257427296370490429, guid: 7fb379e885cb5d5498e7160ced660cd8, type: 3}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 6384971423440555138}
   onPlate: 0
   offset: {x: 0, y: 0, z: 0}
   returnPosition: {x: 0, y: 0, z: 0}

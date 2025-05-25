@@ -30,6 +30,7 @@ public class Sushi : MonoBehaviour
     void Start()
     {
         transform.position -= new Vector3(0, -1, 0);
+        GenerateTexture(); 
     }
 
     // Update is called once per frame
