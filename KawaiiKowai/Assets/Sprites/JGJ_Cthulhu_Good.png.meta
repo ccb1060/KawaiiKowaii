@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 1870e00fc0285094d853c20720fcc21f
+guid: 007cb7f79675ade44940b365fd4fdef3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -975954656617868186
-    second: JGJ_Kowaii_1_0
-  - first:
-      213: 3376920140887612441
-    second: JGJ_Kowaii_1_1
+      213: -6236906148786895927
+    second: JGJ_Cthulhu_Good_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JGJ_Kowaii_1_0
+      name: JGJ_Cthulhu_Good_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 98
-        width: 804
-        height: 698
+        x: 70
+        y: 0
+        width: 422
+        height: 462
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 664576f1966b472f0800000000000000
-      internalID: -975954656617868186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JGJ_Kowaii_1_1
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 757
-        width: 45
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91cd778f9fa3dde20800000000000000
-      internalID: 3376920140887612441
+      spriteID: 9c38b18f6ee0279a0800000000000000
+      internalID: -6236906148786895927
       vertices: []
       indices: 
       edges: []
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      JGJ_Kowaii_1_0: -975954656617868186
-      JGJ_Kowaii_1_1: 3376920140887612441
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

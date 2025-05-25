@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f4c023f474d9e74f9c349dce1841189
+guid: 7fb379e885cb5d5498e7160ced660cd8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8138327018607704880
-    second: RIT_UI_01_0
+      213: -4257427296370490429
+    second: JGJ_Kawaii_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RIT_UI_01_0
+      name: JGJ_Kawaii_2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2692
-        height: 501
+        x: 95
+        y: 98
+        width: 804
+        height: 740
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03b73120e4521f070800000000000000
-      internalID: 8138327018607704880
+      spriteID: 3c309c64e649ae4c0800000000000000
+      internalID: -4257427296370490429
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      RIT_UI_01_0: 8138327018607704880
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
