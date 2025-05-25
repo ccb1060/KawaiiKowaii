@@ -20,7 +20,7 @@ public class Zoom : MonoBehaviour
             transform.position += direction.normalized * speed * Time.deltaTime;
         }
 
-        if ((transform.position - stopPosition).magnitude < 1 && stopCooldown > 0)
+        if ((transform.position - stopPosition).magnitude < .1 && stopCooldown > 0)
         {
             stopped = true;
         }
