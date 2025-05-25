@@ -530,6 +530,26 @@ PrefabInstance:
       propertyPath: mainPlate
       value: 
       objectReference: {fileID: 1861082205}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: sushiCountdownPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: 'sushiCountdownPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6685463951831757129, guid: 90c81e8a184a8c84fb70d788e399ed83, type: 3}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: 'sushiCountdownPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7667828297281154846, guid: fdb331baeef7d5f40a777ddc43b35fcc, type: 3}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: 'sushiCountdownPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1294580202598822450, guid: d43235b3f6c86d34fa01dc5a78f8fa84, type: 3}
+    - target: {fileID: 5279451686080587452, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
+      propertyPath: 'sushiCountdownPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 987370415290633558, guid: 68de552875ff13c47bfffaf78dae96cc, type: 3}
     - target: {fileID: 8332027116631598495, guid: 82011fc87bd426c429fdda3ef09b1d63, type: 3}
       propertyPath: m_Name
       value: GameManager

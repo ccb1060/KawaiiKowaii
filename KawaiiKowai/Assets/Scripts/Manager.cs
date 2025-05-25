@@ -83,8 +83,7 @@ public class Manager : MonoBehaviour
 
     private void SpawnSushiCountdown()
     {
-        GameObject sushi;
-        transform.position -= new Vector3(0, 2, 0);
+        GameObject sushi;;
         if (index == 0)
         {
             sushi = Instantiate(sushiCountdownPrefabs[index].gameObject);
@@ -107,7 +106,7 @@ public class Manager : MonoBehaviour
         }
 
 
-        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
+        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .004f, 0));
     }
 
     /// <summary>
@@ -148,5 +147,11 @@ public class Manager : MonoBehaviour
         text.GetComponent<TMP_Text>().text = input.ToString();
         text.transform.position = pos;
         text.transform.position = mainCam.ViewportToScreenPoint(new Vector3(0, -.01f, 0));
+    }
+
+    public void GoToMenu()
+    {
+        ScoreManager.InitGame();
+        SceneManager.LoadScene("Assets/Scenes/TitleScreen.unity");
     }
 }
