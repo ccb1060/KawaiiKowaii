@@ -105,6 +105,10 @@ MonoBehaviour:
   speed: 5
   points: 1500
   rank: 2
+  possibleSprites:
+  - {fileID: -2839936451528716330, guid: d13423abbc16b5348baea85752117963, type: 3}
+  - {fileID: -3097405433600759709, guid: 081693bb737303845bca1dad8fa88a79, type: 3}
+  spriteRenderer: {fileID: 6384971423440555138}
   onPlate: 0
   offset: {x: 0, y: 0, z: 0}
   returnPosition: {x: 0, y: 0, z: 0}
