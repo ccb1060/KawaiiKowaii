@@ -58,9 +58,9 @@ public class MainPlate : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        Sushi food = collision.gameObject.GetComponent<Sushi>();
+        Sushi food = other.gameObject.GetComponent<Sushi>();
         if (food && !occupant)
         {
             Debug.Log("Entering");
@@ -73,9 +73,9 @@ public class MainPlate : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if(collision.gameObject.GetComponent<Sushi>() == occupant)
+        if(other.gameObject.GetComponent<Sushi>() == occupant)
         {
             Debug.Log("Leaving");
             occupant = null;

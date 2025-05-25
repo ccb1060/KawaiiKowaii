@@ -137,7 +137,7 @@ public class Manager : MonoBehaviour
             sushi = Instantiate(sushiPrefabs[0].gameObject);
         }
 
-        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .01f, 0));
+        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-0.01f, .004f, 0));
     }
 
     public void AddScore(int input, Vector3 pos)
