@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: d13423abbc16b5348baea85752117963
+guid: 2934535e321891240b0bbe9d400fe271
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2839936451528716330
-    second: JGJ_Excellent_1_0
+      213: -6121099033266954435
+    second: JGJ_Kowai_2_0
+  - first:
+      213: -2393297487390404462
+    second: JGJ_Kowai_2_1
+  - first:
+      213: -4820861817328579081
+    second: JGJ_Kowai_2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JGJ_Excellent_1_0
+      name: JGJ_Kowai_2_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 98
-        width: 804
-        height: 647
+        x: 303
+        y: 641
+        width: 73
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6df82fd08d48698d0800000000000000
-      internalID: -2839936451528716330
+      spriteID: d3fd2273cdc7d0ba0800000000000000
+      internalID: -6121099033266954435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JGJ_Kowai_2_1
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 702
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290924e8d9c49ced0800000000000000
+      internalID: -2393297487390404462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JGJ_Kowai_2_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 98
+        width: 804
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdc2ea18bbd81db0800000000000000
+      internalID: -4820861817328579081
       vertices: []
       indices: 
       edges: []

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d13423abbc16b5348baea85752117963
+guid: 8855b6cd801e9a742a08f1ee63ada34a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2839936451528716330
-    second: JGJ_Excellent_1_0
+      213: 914975035125247884
+    second: RIT_UI_04_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JGJ_Excellent_1_0
+      name: RIT_UI_04_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 98
-        width: 804
-        height: 647
+        x: 24
+        y: 2
+        width: 2498
+        height: 349
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6df82fd08d48698d0800000000000000
-      internalID: -2839936451528716330
+      spriteID: c8fadfa52f4a2bc00800000000000000
+      internalID: 914975035125247884
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RIT_UI_04_0: 914975035125247884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

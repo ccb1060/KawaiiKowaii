@@ -23,13 +23,14 @@ public class SoundManager : MonoBehaviour
             case 0:
                 sources[13].Play();
                 sources[13].loop = true;
+                sources[4].PlayDelayed(2.0f);
                 break;
 
             //Main Screen
             case 1:
                 sources[14].Play();
+                sources[14].volume = .5f;
                 sources[14].loop = true;
-                sources[0].Play();
 
                 break;
             
@@ -54,5 +55,34 @@ public class SoundManager : MonoBehaviour
     public void Eating()
     {
         sources[3].Play();
+    }
+
+    public void Kawaii()
+    {
+        sources[8].Play();
+    }
+
+    public void Excellent()
+    {
+        sources[9].Play();
+
+    }
+
+    public void Good()
+    {
+        sources[10].Play();
+
+    }
+
+    public void Normal()
+    {
+        sources[11].Play();
+
+    }
+
+    public void Kowai()
+    {
+        sources[12].Play();
+
     }
 }

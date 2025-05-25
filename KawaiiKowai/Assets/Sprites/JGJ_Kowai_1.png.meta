@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: d13423abbc16b5348baea85752117963
+guid: 71e8a87c4fc223541a3f806d23978d01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2839936451528716330
-    second: JGJ_Excellent_1_0
+      213: 2480229904516949583
+    second: JGJ_Kowai_1_0
+  - first:
+      213: 6848092854064842427
+    second: JGJ_Kowai_1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JGJ_Excellent_1_0
+      name: JGJ_Kowai_1_0
       rect:
         serializedVersion: 2
         x: 95
         y: 98
         width: 804
-        height: 647
+        height: 698
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6df82fd08d48698d0800000000000000
-      internalID: -2839936451528716330
+      spriteID: f46a80415fb8b6220800000000000000
+      internalID: 2480229904516949583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JGJ_Kowai_1_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 757
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb60d630b20590f50800000000000000
+      internalID: 6848092854064842427
       vertices: []
       indices: 
       edges: []

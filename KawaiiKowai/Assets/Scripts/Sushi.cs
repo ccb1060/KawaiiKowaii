@@ -14,7 +14,7 @@ public class Sushi : MonoBehaviour
     [SerializeField] public int points;
 
     //The sushi's quality
-    [SerializeField] int rank;
+    [SerializeField] public int rank;
 
 
 

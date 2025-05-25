@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: d13423abbc16b5348baea85752117963
+guid: 081693bb737303845bca1dad8fa88a79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2839936451528716330
-    second: JGJ_Excellent_1_0
+      213: -3097405433600759709
+    second: JGJ_Excellent_2_0
+  - first:
+      213: 5909899421420460735
+    second: JGJ_Excellent_2_1
+  - first:
+      213: 1711497093830041640
+    second: JGJ_Excellent_2_2
+  - first:
+      213: -4847119589382119179
+    second: JGJ_Excellent_2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JGJ_Excellent_1_0
+      name: JGJ_Excellent_2_0
       rect:
         serializedVersion: 2
         x: 95
         y: 98
-        width: 804
-        height: 647
+        width: 821
+        height: 577
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6df82fd08d48698d0800000000000000
-      internalID: -2839936451528716330
+      spriteID: 368acdc3b2ec305d0800000000000000
+      internalID: -3097405433600759709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JGJ_Excellent_2_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 671
+        width: 72
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba9d08363e240250800000000000000
+      internalID: 5909899421420460735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JGJ_Excellent_2_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 652
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8206ad7f98570c710800000000000000
+      internalID: 1711497093830041640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JGJ_Excellent_2_3
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 594
+        width: 82
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0aa032a629bbcb0800000000000000
+      internalID: -4847119589382119179
       vertices: []
       indices: 
       edges: []
