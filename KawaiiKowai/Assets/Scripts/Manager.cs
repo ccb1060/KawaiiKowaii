@@ -31,8 +31,6 @@ public class Manager : MonoBehaviour
     //A list of all the countdown sushi
     [SerializeField] List<GameObject>? sushiCountdownPrefabs;
 
-    [SerializeField] int score;
-
     [SerializeField] SoundManager soundManager;
 
     //Is the countdown happening?
@@ -142,7 +140,7 @@ public class Manager : MonoBehaviour
 
     public void AddScore(int input, Vector3 pos)
     {
-        score += input;
+        ScoreManager.AddScore(input);
         GameObject text = Instantiate(textPref, mainPlate.transform.position, mainPlate.transform.rotation, canvas.transform);
         text.GetComponent<TMP_Text>().text = input.ToString();
         text.transform.position = pos;

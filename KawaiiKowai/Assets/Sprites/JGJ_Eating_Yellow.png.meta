@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JGJ_Eating_Yellow_0: 3314457563779966347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
