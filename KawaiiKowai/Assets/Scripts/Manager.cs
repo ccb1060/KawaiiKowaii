@@ -27,14 +27,18 @@ public class Manager : MonoBehaviour
 
     //A list containing all the basic versions of the sushi types
     [SerializeField] List<GameObject> sushiPrefabs;
+
+    //A list of all the countdown sushi
     [SerializeField] List<GameObject>? sushiCountdownPrefabs;
 
     [SerializeField] int score;
 
     [SerializeField] SoundManager soundManager;
 
-    private bool sushiCountdown = false;
+    //Is the countdown happening?
+    public bool sushiCountdown = false;
 
+    //Where are we in the countdown
     private int index = 0;
 
 
@@ -62,6 +66,7 @@ public class Manager : MonoBehaviour
         //If it's time, then spawns a sushi and resets the cooldown
         if (cooldown <= 0)
         {
+            //
             if (!sushiCountdown && sushiCountdownPrefabs.Count > 1)
             {
                 SpawnSushiCountdown();
