@@ -110,7 +110,7 @@ public class Manager : MonoBehaviour
         }
 
 
-        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.015f, .004f, 0));
+        sushi.transform.position = mainCam.ViewportToScreenPoint(new Vector3(-.01f, .004f, 0));
     }
 
     /// <summary>
