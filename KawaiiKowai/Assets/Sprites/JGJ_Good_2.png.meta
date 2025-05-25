@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JGJ_Good_2_0: -1106055915658948966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,25 +7,26 @@ public class Zoom : MonoBehaviour
     private bool stopped;
     [SerializeField] Vector3 direction;
     [SerializeField] float speed;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (!stopped)
+        if (stopped)
         {
-            transform.position += direction.normalized * speed * Time.deltaTime;
+            stopCooldown -= Time.deltaTime;
         }
         else
         {
-            stopCooldown -= Time.deltaTime;
+            transform.position += direction.normalized * speed * Time.deltaTime;
+        }
 
-            if (stopCooldown < 0)
-                stopped = false;
+        if ((transform.position - stopPosition).magnitude < 1 && stopCooldown > 0)
+        {
+            stopped = true;
+        }
+        else
+        {
+            stopped = false;
         }
 
 
